@@ -1,0 +1,39 @@
+modules = other files we can use to extend the functionality of script
+module are basically libraries
+
+to access a module:
+    use import keyword
+    these need to be done before like classes in java
+    python has a few built in modules that can be imported
+we can import as many as needed
+to reference it module_name.object_name
+
+We can easily import objects from other modules that are located in the 
+same directory by importing file name and specifying objects we wish to use
+
+mod1, mod2 are both in the smae directory, to import one all we need to done
+is specify the filename of the module we wish to import
+
+to import from a folder a level lower than our current file
+we import specifying folder_name.module_name
+in his example he did mod4.mod4
+if they are in different folders such as importing something from day2 to day3
+
+we can use modules from pypi.org
+we install them via pip3
+which needs to be installed with
+sudo apt install python3-pip
+
+to install modules
+pip3 install modulename
+once installed import as with any other modules
+
+when you have a bunch of things to install
+make a requirement.txt and add all the things to download such as flask, selenium etcetc.
+
+the requirements.txt should contain the name of pypi modules you wish to install.
+then run command
+pip3 install -r requirements.txt
+
+if we haven't been regularly updating requirements.txt we can get all python modules added to a file via 
+pip3 freeze > requirements.txt
