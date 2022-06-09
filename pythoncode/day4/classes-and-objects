@@ -1,0 +1,25 @@
+classes are blueprints which contain all attributes/methods
+classes are used to create objects
+
+objects are instances of classes
+
+attributes are data that are attached to a class
+
+methods are procedures or functions attached to classes
+
+good to give classes default values
+
+
+Self keyword is used as a reference to current instance of class
+Ensures methods wont conflict with other instances
+!self must be the 1st parameter in any method in a class
+
+leading/trailing underscores
+
+single leading underscore: This signals that the variable is private and shouldn't be accessed
+
+single trailing underscore: 
+Used to avoid conflicts with python keywords such as class
+
+Double leading underscores: 
+Used for name management which prevents collisions when class is extended

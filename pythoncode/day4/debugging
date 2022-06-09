@@ -1,0 +1,11 @@
+static analysis
+examining code without running it to locate errors
+best done with your own code
+need a good understanding of syntax
+
+dynamic analysis
+debugging by running code
+achieve with:-
+    1) print()
+    2) python debugging tool
+    
