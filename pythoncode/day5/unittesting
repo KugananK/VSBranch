@@ -1,0 +1,37 @@
+done with pytest
+install from pypi
+pip3 install pytest
+testing should bew down in seperate folder
+
+# def fun(x):
+#     return x * 2
+
+# def test_fun():
+#     assert fun(4) == 0
+#     # this assert statment will allow us to establish what should be outputted
+#     #given a certain parameter is passed into the function
+
+When writing tests, they should reside in a file called test_<name>.py
+
+example in exunittesting folder
+
+the empty __init__.py in test and program is what connects the folders
+
+need to install pip3
+sudo apt install python3-pip on the vm
+# watch the recording to go through testing again
+how to run
+method 1:
+    cd into directory contatining program and test directories
+    run python3 -m pytest
+
+method 2: (using pytest cov)
+    install pytest -cov
+        pip3 install pytest-cov
+    cd into directory containing program and test directories
+    run python3 -m pytest<file containing test>--cov=<app folder>
+
+to get coverage report to show missing lines:
+    python3 -m pytest --cov-report term-missing --cov=<app folder> <test folder>
+
+look up pytest coverage report to finf code
