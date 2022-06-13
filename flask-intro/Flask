@@ -1,0 +1,35 @@
+Flask is a micro-framework(a template used for structure of app being built)
+It is python driven
+
+Keeps it simple with install but very exentensible
+# things which we can add to framework
+## DB interactions
+## Forms
+## Secrets
+
+### Structure of flask -app:
+app.py used to run application
+__init__.py contatins objects for app to be used
+application -> templates are where html templates wuill be stored
+application folder will be where the python files are located
+routes.py will be where app functionality is located
+
+# to install flask
+pip3 install flask
+
+# to install venv
+sudo apt install python3 venv
+this allows you to create a virtual enviroment, kinda like a vm
+inside a vm
+
+# to make venv folder
+python3 -m venv venv
+
+# to activate venv
+source venv/bin/activate
+
+# to stop venv
+deactivate
+
+Dont push venv to github
+Make sure to put venv in the gitignore
