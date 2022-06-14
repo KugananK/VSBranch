@@ -1,0 +1,33 @@
+Why
+    We need to define tables which we are going to use
+    allows us to manage tables without SQL Console
+
+schema recides in the file models.py
+
+## application folder -> templates folder
+    ## should contain __init.py__
+## tests folder
+## application folder
+    ## app.py
+    ## create.py
+    ## requirements.txt
+    ## forms.py
+    ## models.py
+
+from application import db
+class Person(dbModel):
+    id = db.column(db.intefer, primary_key=True)
+    name = db.column(db.String(IGO), nullable=False)
+
+Column Datatypes:
+    db.Integer
+    db.String(max_string_length)
+    db.Boolean
+    db.DateTime
+    db.Float
+
+Constratints
+    Nullable
+    Unique
+    Primary_key
+    Default

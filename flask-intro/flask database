@@ -1,0 +1,37 @@
+Used to store and access information
+    to store large amounts of data
+    persistence
+
+done with SQL Alchemy
+    needs to be installed via pip3
+    Allows us to manipulate DB with pythonic code
+
+Connecting to the DB
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'dbconnectionstring'
+
+DB Connection String:
+    Inbuilt: 'sqlite:///data.db'
+        ## sqlite is the type of database
+        ## data.db is the database name
+    
+    Stand alone DB:
+        "mysql+pymysql://username:password@host/database_name"
+            ## mysql+pymysql is the type of DB
+            ## username:password is the things used to connect to the DB
+            ## @host is the ip of the db instance
+            ## database_name is the exact DB on the server(this must be an existing server)
+ 
+ Best practise to hide these dbconnection strings via enviroment variables
+ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
+    os needs to be imported (import OS)
+
+to set enviroment variables:
+    in terminal enter:
+        export variable = value
+
+example in 2-flask/db
+neeed to import flask and sqlalchemy
+then create.py which imports the db object
+then in create.py delete the schema and create schema.
+
+Should use envirmoent variables as people can get access to your DB if not 

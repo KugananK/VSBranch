@@ -1,0 +1,14 @@
+provides URL endpoints
+passes variable to front end html
+
+configured with the @app.route decorator
+
+## @app.route('/home')
+## def home():
+##      return 'Hello,World!'
+When we visit www.app.com/home "Hello, World!" will be displayed
+
+if we add 
+## @app.route('/')
+This route to the code above we can ensure the code is run everytime
+a user visits www.app.com
