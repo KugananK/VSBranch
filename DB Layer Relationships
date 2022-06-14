@@ -1,0 +1,11 @@
+Why:
+    A database with 1 table wont be very useful
+How:
+    The db.relationship() method
+
+2 tables
+
+Users                       Cars
+pk  ID          Int         Pk  ID              Int
+    first_name  Str             Number_plate    Str
+    last_name   Str         Fk  owner           Int
