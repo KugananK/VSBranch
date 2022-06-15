@@ -1,0 +1,33 @@
+Templates to stop you coding each thing
+Done to avoid repeating html code for each html page we create
+
+Flask templating library is called Jinja2
+
+syntax:
+    variables       {{variable_name}}
+    code            {% code_to_be_executed %}
+    blocks          {% block name_of_block %}
+                    {% endblock name_of_block %}
+    extending files {% extends 'layout.html' %}
+
+if statment         {% if 3 == 4 %}
+                    <h1> 3 is equal 4</h1>
+                    {% else %}
+                    <h1>3 is not equal to 4</h1>
+                    {% endif %}
+
+for loops           {% for user in ['Ryan', 'Chris', 'Reece', 'Earl' %]}
+                    <p>{{user}}</p>
+                    {% endfor %}
+
+rendering templates: 
+<!-- imported from flask -->
+<!-- from flask import from template -->
+    return render_template('index.html')
+
+to pass in varaiables for html to use:
+    return render_template('index.html', users =['Ryan', 'Adam'])
+
+render_template() looks for html files in folder called templates
+templates directory must be in teh same directory as the files using 
+    render_template function
